@@ -1,0 +1,36 @@
+<header role='banner' id='js-image' class='banner'>
+    <div class='row'> 
+      <div id='js-header' class='fi-short'>
+        <section id='js-top-link' class="top_logo top al_left">
+          <a href="./main.php"><img class='logo' src='./img/woof-logo.png'></a>
+          <section id='js-login-link'>
+            <a href="./sign.php"><section style='color: "#c00000"; text-shadow: 1px 0px #888;'>Log In / Sign up</section></a>
+          </section>
+          <section id='js-logout-link' class='hidden'>
+            <a href onclick="handleLogout();"><section style='color: "#c00000"; text-shadow: 1px 0px hsl(0, 0%, 53%);'>Log Out</section></a>
+          </section>
+        </section>
+        <p class='font_el ind_l mg_top'>Hi <span class='header-name-font' id='js-header1'>Everyone</span>!</BR><span id='js-header2' class='header-desc-font'>Ready to Bark?</span></p>
+        <p id='js-header3' class='font_m ind_l mg_top'>Let's have some fun today</p>
+        &nbsp;&nbsp;&nbsp;
+        <button id="js-sign-btn" type="button" onclick="window.location.href = './sign.php'" class="ind_l btn_black pointer">Sign up today!</button>&nbsp;&nbsp;&nbsp;
+        <button id="js-saved-btn" type="button" onclick="window.location.href = './saved.php'" class="ind_l btn_black pointer hidden">View Your Favorites</button>&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+</header>
+
+<!-- Error Message Popup -->
+<div id='js-err-wr' onclick="document.getElementById('js-err-wr').classList.add('hidden');" class='hidden pointer'>
+  <div class='dark'></div>
+  <section class='popup-err' style="z-index:999;" role="region">
+      <div id='js-err-message' class='popup-text'>message goes here</div>
+  </section>
+</div>
+
+<!-- Information Message Popup -->
+<div id='js-info-wr' onclick="document.getElementById('js-info-wr').classList.add('hidden');" class='hidden pointer'>
+  <div class='dark'></div>
+  <section class='popup-info' style="z-index:999;" role="region">
+      <div id='js-info-message' style="font-size: 2.4rem; margin-bottom:2rem;" class='popup-text'>message goes here</div>
+  </section>
+</div>
